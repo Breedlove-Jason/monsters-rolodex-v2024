@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row} from "react-bootstrap";
 import MonsterCard from "../MonsterCard/MonsterCard.jsx";
+import PropTypes from 'prop-types';
 
 function MonsterList({monsters}) {
     return (
@@ -12,5 +13,16 @@ function MonsterList({monsters}) {
         </Row>
     )
 }
+
+MonsterList.propTypes = {
+    monsters: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            email: PropTypes.string.isRequired,
+            phone: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+};
 
 export default MonsterList

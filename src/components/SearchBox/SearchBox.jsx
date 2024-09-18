@@ -1,6 +1,6 @@
 // src/components/SearchBox/SearchBox.jsx
-import React from 'react';
 import { Form } from 'react-bootstrap';
+import PropTypes from "prop-types";
 
 function SearchBox({ onSearchChange }) {
     return (
@@ -12,5 +12,9 @@ function SearchBox({ onSearchChange }) {
         />
     );
 }
+
+SearchBox.propTypes = {
+    onSearchChange: PropTypes.func.isRequired,
+};
 
 export default SearchBox;
