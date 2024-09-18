@@ -1,8 +1,54 @@
-# React + Vite
+# Monsters Rolodex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that displays a list of monsters fetched from an API. Users can search for monsters by name.
+![monsters-rolodex-screenshot.png](public/monsters-rolodex-screenshot.png)
+## Features
 
-Currently, two official plugins are available:
+- Fetches monster data from an API
+- Displays monster information in cards
+- Search functionality to filter monsters by name
+- Responsive design using Bootstrap
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- React
+- Axios
+- Bootstrap
+- PropTypes
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Breedlove-Jason/monsters-rolodex-v2024.git
+    cd monsters-rolodex-v2024
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+## Project Structure
+
+```plaintext
+monsters-rolodex/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── MonsterCard/
+│   │   │   └── MonsterCard.jsx
+│   │   ├── MonsterList/
+│   │   │   └── MonsterList.jsx
+│   │   └── SearchBox/
+│   │       └── SearchBox.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md

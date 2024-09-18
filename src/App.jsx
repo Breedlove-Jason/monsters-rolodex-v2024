@@ -28,6 +28,7 @@ function App() {
 
   return (
       <Container className="d-flex flex-column align-items-center">
+          <h1 className={"display-1"}>Monsters Rolodex</h1>
         <SearchBox onSearchChange={onSearchChange} />
         <MonsterList monsters={filteredMonsters} />
       </Container>
